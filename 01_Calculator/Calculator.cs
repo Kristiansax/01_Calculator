@@ -26,7 +26,21 @@
         }
         public static int Power(int x, int y)
         {
-
+            int sum = x;
+            for (int i = 1; y > i; i++)
+            {
+                sum = sum * x;
+            }
+            return sum;
+        }
+        public static int Factorial(int x)
+        {
+            int sum = 1;
+            for (int i = x; i > 0; i --)
+            {
+                sum = i * sum;
+            }
+            return sum;
         }
     }
 }

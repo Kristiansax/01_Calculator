@@ -54,18 +54,22 @@ namespace _01_Calculator
          {
             //It raises one number to the power of another number
             Assert.AreEqual(49, Calculator.Power(7, 2));
+            Assert.AreEqual(4096, Calculator.Power(8, 4));
             //throw new NotImplementedException();
-         }
+        }
          [TestMethod]
          public void Factorial()
          {
-             //# http://en.wikipedia.org/wiki/Factorial
-             //  it "computes the factorial of 0"
-             //  it "computes the factorial of 1"
-             //  it "computes the factorial of 2"
-             //  it "computes the factorial of 5"
-             //  it "computes the factorial of 10"
-             throw new NotImplementedException();
-         }
+            Assert.AreEqual(120, Calculator.Factorial(5));
+            Assert.AreEqual(362880, Calculator.Factorial(9));
+
+            //# http://en.wikipedia.org/wiki/Factorial
+            //  it "computes the factorial of 0"
+            //  it "computes the factorial of 1"
+            //  it "computes the factorial of 2"
+            //  it "computes the factorial of 5"
+            //  it "computes the factorial of 10"
+            //throw new NotImplementedException();
+        }
     }
 }
