@@ -22,7 +22,7 @@ namespace _01_Calculator
         public void Sum()
         {
             //Arrange
-            int[] numbers = new int[2] { };
+            int[] numbers = new int[2];
             Assert.AreEqual(0, Calculator.Sum(numbers));
 
             numbers[0] = 7;
@@ -33,29 +33,39 @@ namespace _01_Calculator
             Assert.AreEqual(18, Calculator.Sum(numbers));
 
         }
-        [TestMethod]
-        public void Multiply()
-        {
+         [TestMethod]
+         public void Multiply()
+         {
             //It multiplies two numbers
             //It multiplies several numbers
-            throw new NotImplementedException();
-        }
-        [TestMethod]
-        public void Power()
-        {
+            int[] numbers = new int[2];
+            numbers[0] = 3;
+            numbers[1] = 5;
+            Assert.AreEqual(15, Calculator.Multiply(numbers));
+            int[] numbers1 = new int[3];
+            numbers1[0] = 7;
+            numbers1[1] = 5;
+            numbers1[2] = 9;
+            Assert.AreEqual(315, Calculator.Multiply(numbers1));
+             //throw new NotImplementedException();
+         }
+         [TestMethod]
+         public void Power()
+         {
             //It raises one number to the power of another number
-            throw new NotImplementedException();
-        }
-        [TestMethod]
-        public void Factorial()
-        {
-            //# http://en.wikipedia.org/wiki/Factorial
-            //  it "computes the factorial of 0"
-            //  it "computes the factorial of 1"
-            //  it "computes the factorial of 2"
-            //  it "computes the factorial of 5"
-            //  it "computes the factorial of 10"
-            throw new NotImplementedException();
-        }
+            Assert.AreEqual(49, Calculator.Power(7, 2));
+            //throw new NotImplementedException();
+         }
+         [TestMethod]
+         public void Factorial()
+         {
+             //# http://en.wikipedia.org/wiki/Factorial
+             //  it "computes the factorial of 0"
+             //  it "computes the factorial of 1"
+             //  it "computes the factorial of 2"
+             //  it "computes the factorial of 5"
+             //  it "computes the factorial of 10"
+             throw new NotImplementedException();
+         }
     }
 }
